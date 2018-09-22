@@ -11,6 +11,8 @@ Type JS commands for interacting with blockchain
 -> Transct
 ETC
 
+ENSURE INSTALLTION IS FOR CORRECT VERSIO AND SYSTEM ARCHITECTURE!
+
 
 Reacht the JSON RPC via IPC (Interprocess comm)
 Connect via HTTP to interact with JS RPC
