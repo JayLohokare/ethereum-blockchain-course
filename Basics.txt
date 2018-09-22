@@ -1,0 +1,45 @@
+GETH - Go Ethereum
+
+Full suync - Entire blocks download
+Fast sync -  Lasst 1024 transctions
+Lite - Downloads only headers, snapshot of 
+
+
+JS JSON RPC -> 
+Type JS commands for interacting with blockchain
+-> Craete new acc
+-> Transct
+ETC
+
+
+Reacht the JSON RPC via IPC (Interprocess comm)
+Connect via HTTP to interact with JS RPC
+
+
+We3JS -> HTTP RPC -> Ethereum node
+(Typical API interface)
+
+Chain data -> C:\Users\JayLohokare\AppData\Roaming\Ethereum\geth
+
+
+geth --syncmode "light"
+geth attach ipc://./pipe/geth.ipc
+
+
+
+Blockchain ->
+Public => Open for everythin to all
+Consortium => Controlled aspectsPrivate => Everything private
+
+
+Genesis JSON file ->
+Config file used by Go-Eth for creating the 1st Block (Genesis block)
+
+config -> 
+	chainId -> 1 = Main net, 2/3 = Test. Use any other number
+	homsteadBlock = 0 (Version of Eth)
+	eip15Block, 158 -> Include eth protocol improvements
+
+difficulty -> mining difficulty
+gasLimit -> Required for contracts - Hiher the gas = more complex the contracts! Keep these within limit (6 million currently for main et)
+allow -> Pre-allocate eth to certain accounts

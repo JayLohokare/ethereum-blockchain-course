@@ -1,0 +1,21 @@
+personal.newAccount();
+-> Creates a new account and saves it
+-> Stores keys using the passphrase on Hard-drive.
+-> location is User/AppData/Roaming/Ehereum/keystore
+
+
+List of commands
+https://github.com/ethereum/go-ethereum/wiki/Management-APIs
+
+Initialize:
+geth init .\genesis.json --datadir myChainData
+
+Start:
+geth --datadir .\myChainData\
+
+
+This blockchain might start syncing incase there is some other blockchain with same ID.
+Start with no discover mode instead!
+
+geth --datadir .\myChainData\ --nodiscover
+
