@@ -1,0 +1,12 @@
+remix.ethereum.org
+
+Environment type -> 
+1. JVM : temp env, gives 5 accounts wth 100 etheres. Good for testing
+2. Injected Web3 : Use with Metamask/MIST
+3. Web3 provider : Conect with custom. Use with deployed blockchain (Enter the RPC)
+
+Sample code format in the solidity directory
+
+
+Value -> 
+Amount passed to the contract
