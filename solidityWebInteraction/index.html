@@ -5,18 +5,18 @@
     <script src="web3.js/dist/web3.min.js"></script>
 
     <script type="text/javascript">
-        var contract_address = "0x26B8B30CdC2aBCf5F6Dd1e70D71765ec8452FAd8";
-        var contract_abi = "";
+        var contract_address = "0x0eb38cD03A10312E049cB88F78005A42b4BA7b72";
+        var contract_abi = [ { "constant": true, "inputs": [], "name": "getCreator", "outputs": [ { "name": "", "type": "address", "value": "0x527078440dc5dECeb8eA98B879134FD095686Ea7" } ], "payable": false, "stateMutability": "view", "type": "function", "signature": "0x0ee2cb10" }, { "constant": false, "inputs": [], "name": "kill", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function", "signature": "0x41c0e1b5" }, { "constant": false, "inputs": [ { "name": "newNmber", "type": "uint256" } ], "name": "setNmber", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function", "signature": "0xb4d8ef00" }, { "constant": true, "inputs": [], "name": "getNumber", "outputs": [ { "name": "", "type": "uint256", "value": "3" } ], "payable": false, "stateMutability": "view", "type": "function", "signature": "0xf2c9ecd8" }, { "inputs": [ { "name": "", "type": "address", "index": 0, "typeShort": "address", "bits": "", "displayName": "", "template": "elements_input_address", "value": "" } ], "payable": false, "stateMutability": "nonpayable", "type": "constructor", "signature": "constructor" } ];
         
         if (typeof web3 !== 'undefined') {
             web3 = new Web3(web3.currentProvider);
         } else {
             // set the provider you want from Web3.providers
-            web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+            web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:8545"));
         }
         var contract_instance = web3.eth.contract(contract_abi).at(contract_address);
         function getCounter() {
-            document.getElementById("myCounter").innerText = contract_instance.getMyNumber().toNumber();
+            document.getElementById("myCounter").innerText = contract_instance.getNumber().toNumber();
         }
     </script>
 </head>
